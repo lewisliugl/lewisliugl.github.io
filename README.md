@@ -1,7 +1,7 @@
 # Welcome to my blog!
 ✌️ Hello World!\
 🧸 这里是我的个人博客。\
-通过[这个地址](https://lewisliugl.github.io)可以直接访问。✨
+通过[这个地址](https://lewisliugl.xyz)可以直接访问。✨
 ---
 ## 本站Blog编辑的一些技巧
 ### 编写摘要
