@@ -43,4 +43,33 @@ date: 2019-10-10 10:00:00
 ---
 以下是文章内容
 ```
-
+### 在文章中添加tag
+```html
+<p class="note note-primary">标签</p>
+```
+一共可以指定7种标签：
+- primary 紫
+- secondary 灰
+- success 绿
+- danger 红
+- warning 黄
+- info 蓝
+- light 黑
+### 行内标签
+```html
+<span class="label label-primary">Label</span>
+```
+一共可以指定6种标签
+- primary 紫
+- default 灰
+- info 蓝
+- success 绿
+- warning 黄
+- danger 红
+### 按钮
+```markdown
+{% btn url, text, title %}
+```
+- url：链接
+- text：按钮上的文本
+- title：悬停文字
