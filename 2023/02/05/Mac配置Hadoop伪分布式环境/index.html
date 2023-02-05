@@ -28,15 +28,15 @@
 <meta property="og:site_name" content="演绎法Blog">
 <meta property="og:description" content="⚠️配置Hadoop之前需要提前配置好Java及其环境变量!!!   Mac安装Hadoop 这里直接使用Homebrew安装Hadoop。 1234brew install hadoop# 查看Hadoop信息brew info hadoop   修改配置文件 Hadoop伪分布式环境的配置需要修改2个配置文件，分别是：  core-site.xml hdfs-site.xml   这两个配置">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://gitee.com/lewisliugl/pic-bed/raw/master/img/%E6%88%AA%E5%B1%8F2023-02-05%2019.56.48.png">
-<meta property="og:image" content="https://gitee.com/lewisliugl/pic-bed/raw/master/img/%E6%88%AA%E5%B1%8F2023-02-05%2020.06.18.png">
+<meta property="og:image" content="https://blog-img-1312725637.cos.ap-beijing.myqcloud.com/article4/NameNode.png">
+<meta property="og:image" content="https://blog-img-1312725637.cos.ap-beijing.myqcloud.com/article4/Hadoop%20Cluster.png">
 <meta property="article:published_time" content="2023-02-05T11:07:33.000Z">
-<meta property="article:modified_time" content="2023-02-05T12:30:54.483Z">
+<meta property="article:modified_time" content="2023-02-05T12:50:44.280Z">
 <meta property="article:author" content="演绎法">
 <meta property="article:tag" content="Hadoop">
 <meta property="article:tag" content="大数据">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://gitee.com/lewisliugl/pic-bed/raw/master/img/%E6%88%AA%E5%B1%8F2023-02-05%2019.56.48.png">
+<meta name="twitter:image" content="https://blog-img-1312725637.cos.ap-beijing.myqcloud.com/article4/NameNode.png">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
@@ -380,7 +380,7 @@
 <h2 id="检查启动是否成功"><a class="markdownIt-Anchor" href="#检查启动是否成功"></a> 检查启动是否成功</h2>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs shell"><span class="hljs-meta prompt_"># </span><span class="language-bash">检查相关进程是否已经启动</span><br>jps -l<br><span class="hljs-meta prompt_"># </span><span class="language-bash">正常情况下，NameNode、SecondaryNameNode、DataNode都应该启动</span><br><span class="hljs-meta prompt_"># </span><span class="language-bash">38034 org.apache.hadoop.hdfs.server.datanode.DataNode</span><br><span class="hljs-meta prompt_"># </span><span class="language-bash">38297 jdk.jcmd/sun.tools.jps.Jps</span><br><span class="hljs-meta prompt_"># </span><span class="language-bash">38170 org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode</span><br><span class="hljs-meta prompt_"># </span><span class="language-bash">37932 org.apache.hadoop.hdfs.server.namenode.NameNode</span><br></code></pre></td></tr></table></figure>
 <p>在浏览器输入<code>localhost:9870</code>查看namenode<br />
-<img src="https://gitee.com/lewisliugl/pic-bed/raw/master/img/截屏2023-02-05 19.56.48.png" srcset="https://blog-img-1312725637.cos.ap-beijing.myqcloud.com/basic/new_loading.gif" lazyload/></p>
+<img src="https://blog-img-1312725637.cos.ap-beijing.myqcloud.com/article4/NameNode.png" srcset="https://blog-img-1312725637.cos.ap-beijing.myqcloud.com/basic/new_loading.gif" lazyload alt="" title="NameNode页面" /></p>
 <h2 id="如果配置成功应该显示如上的页面"><a class="markdownIt-Anchor" href="#如果配置成功应该显示如上的页面"></a> 如果配置成功，应该显示如上的页面。</h2>
 <h1 id="配置并启动yarn"><a class="markdownIt-Anchor" href="#配置并启动yarn"></a> 配置并启动Yarn</h1>
 <h2 id="配置yarn"><a class="markdownIt-Anchor" href="#配置yarn"></a> 配置Yarn</h2>
@@ -399,8 +399,8 @@
 <h2 id="启动yarn"><a class="markdownIt-Anchor" href="#启动yarn"></a> 启动Yarn</h2>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs shell">cd /usr/local/Cellar/hadoop/3.3.4/sbin<br>./start-yarn.sh<br></code></pre></td></tr></table></figure>
 <p>在浏览器输入localhost:8088</p>
-<img src="https://gitee.com/lewisliugl/pic-bed/raw/master/img/%E6%88%AA%E5%B1%8F2023-02-05%2020.06.18.png" srcset="https://blog-img-1312725637.cos.ap-beijing.myqcloud.com/basic/new_loading.gif" lazyload alt="截屏2023-02-05 20.06.18" style="zoom:50%;" />
-<p>如果上述配置和启动没有问题，应该显示如上页面。</p>
+<p><img src="https://blog-img-1312725637.cos.ap-beijing.myqcloud.com/article4/Hadoop%20Cluster.png" srcset="https://blog-img-1312725637.cos.ap-beijing.myqcloud.com/basic/new_loading.gif" lazyload alt="Hadoop集群页面" title="Hadoop集群页面" /><br />
+如果上述配置和启动没有问题，应该显示如上页面。</p>
 <p class="note note-primary">
 配置完成，完结撒花🎉
 </p>
