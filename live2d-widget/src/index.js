@@ -1,7 +1,7 @@
-import Model from "./model.js";
-import showMessage from "./message.js";
-import randomSelection from "./utils.js";
-import tools from "./tools.js";
+import Model from "hexo-theme-fluid/source/live2d-widget/src/model.js";
+import showMessage from "hexo-theme-fluid/source/live2d-widget/src/message.js";
+import randomSelection from "hexo-theme-fluid/source/live2d-widget/src/utils.js";
+import tools from "hexo-theme-fluid/source/live2d-widget/src/tools.js";
 
 function loadWidget(config) {
     const model = new Model(config);

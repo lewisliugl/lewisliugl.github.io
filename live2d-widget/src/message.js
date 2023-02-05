@@ -1,4 +1,4 @@
-import randomSelection from "./utils.js";
+import randomSelection from "hexo-theme-fluid/source/live2d-widget/src/utils.js";
 
 let messageTimer;
 

@@ -1,5 +1,5 @@
-import showMessage from "./message.js";
-import randomSelection from "./utils.js";
+import showMessage from "hexo-theme-fluid/source/live2d-widget/src/message.js";
+import randomSelection from "hexo-theme-fluid/source/live2d-widget/src/utils.js";
 
 class Model {
     constructor(config) {
