@@ -4,6 +4,7 @@
 通过[这个地址](https://lewisliugl.cn/)可以直接访问。✨
 ---
 ## 本站Blog编辑的一些技巧
+> 以下均基于Fluid主题
 ### 编写摘要
 使用<!--more-->在MD文档中进行划分，格式如下：
 ```markdown
@@ -73,3 +74,25 @@ date: 2019-10-10 10:00:00
 - url：链接
 - text：按钮上的文本
 - title：悬停文字
+### Bilibili卡片
+> 该功能需要安装hexo-bilibili-card插件
+```markdown
+{% bilicard your_video_id %}
+```
+your_video_id是B站视频的AV号或BV号
+### 统计图表
+> 该功能需要安装hexo-statistics-charts插件
+在文件中插入如下标签来使用
+```html
+<!-- Post Calendar -->
+<div id="posts-calendar"></div>
+<!-- Post Statistics -->
+<div id="posts-chart"></div>
+<!-- Tag Statistics -->
+<!-- "data-length" = how many tags to show, default 10 -->
+<div id="tags-chart" data-length="10"></div>
+<!-- Category Statistics (without title) -->
+<div id="categories-chart"></div>
+<!-- Category Radar Chart (without title) -->
+<div id="categories-radar"></div>
+```
