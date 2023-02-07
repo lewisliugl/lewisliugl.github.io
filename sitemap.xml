@@ -63,20 +63,6 @@
   </url>
   
   <url>
-    <loc>https://lewisliugl.cn/tags/Linux/</loc>
-    <lastmod>2023-02-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://lewisliugl.cn/tags/Shell/</loc>
-    <lastmod>2023-02-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://lewisliugl.cn/tags/Hadoop/</loc>
     <lastmod>2023-02-07</lastmod>
     <changefreq>weekly</changefreq>
@@ -99,6 +85,20 @@
   
   <url>
     <loc>https://lewisliugl.cn/tags/Linux%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
+    <lastmod>2023-02-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://lewisliugl.cn/tags/Linux/</loc>
+    <lastmod>2023-02-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://lewisliugl.cn/tags/Shell/</loc>
     <lastmod>2023-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
