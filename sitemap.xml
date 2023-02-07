@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://lewisliugl.cn/20230201/Homebrew%E5%AE%89%E8%A3%85%E5%8F%8A%E6%8D%A2%E6%BA%90/</loc>
+    <loc>https://lewisliugl.cn/about/</loc>
     
     <lastmod>2023-02-07</lastmod>
     
@@ -11,9 +11,9 @@
   </url>
   
   <url>
-    <loc>https://lewisliugl.cn/about/</loc>
+    <loc>https://lewisliugl.cn/20230201/Homebrew%E5%AE%89%E8%A3%85%E5%8F%8A%E6%8D%A2%E6%BA%90/</loc>
     
-    <lastmod>2023-02-05</lastmod>
+    <lastmod>2023-02-07</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -63,6 +63,20 @@
   </url>
   
   <url>
+    <loc>https://lewisliugl.cn/tags/MySQL/</loc>
+    <lastmod>2023-02-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://lewisliugl.cn/tags/Linux%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
+    <lastmod>2023-02-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://lewisliugl.cn/tags/Hadoop/</loc>
     <lastmod>2023-02-07</lastmod>
     <changefreq>weekly</changefreq>
@@ -85,20 +99,6 @@
   
   <url>
     <loc>https://lewisliugl.cn/tags/Shell/</loc>
-    <lastmod>2023-02-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://lewisliugl.cn/tags/MySQL/</loc>
-    <lastmod>2023-02-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://lewisliugl.cn/tags/Linux%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
     <lastmod>2023-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
