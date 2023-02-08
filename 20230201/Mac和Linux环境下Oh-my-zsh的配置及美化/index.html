@@ -39,12 +39,12 @@
   <meta name="author" content="演绎法">
   <meta name="keywords" content="">
   
-    <meta name="description" content="zsh准备 首先查看当前终端是否为zsh，输入如下命令查看： 123echo $SHELL# 如果是zsh，输入应该如下# &#x2F;bin&#x2F;zsh 如果不是zsh，检查是否安装zsh： 1234cat &#x2F;etc&#x2F;shells# 检查输出中是否有如下一行# &#x2F;bin&#x2F;zsh# 如果没有，则代表没有安装 如果没有安装zsh，请根据自己的系统自行查阅安装方法(我也忘了…😣 确认安装zsh后，输入如下命令修">
+    <meta name="description" content="zsh准备 首先查看当前终端是否为zsh，输入如下命令查看： 123echo $SHELL# 如果是zsh，输入应该如下# &#x2F;bin&#x2F;zsh 如果不是zsh，检查是否安装zsh： 1234cat &#x2F;etc&#x2F;shells# 检查输出中是否有如下一行# &#x2F;bin&#x2F;zsh# 如果没有，则代表没有安装 如果没有安装zsh，请根据自己的系统自行查阅安装方法(我也忘了…😣 确认安装zsh后，输入如下命令修改">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Mac和Linux环境下Oh-my-zsh的配置及美化">
 <meta property="og:url" content="https://lewisliugl.cn/20230201/Mac%E5%92%8CLinux%E7%8E%AF%E5%A2%83%E4%B8%8BOh-my-zsh%E7%9A%84%E9%85%8D%E7%BD%AE%E5%8F%8A%E7%BE%8E%E5%8C%96/">
 <meta property="og:site_name" content="演绎法Blog">
-<meta property="og:description" content="zsh准备 首先查看当前终端是否为zsh，输入如下命令查看： 123echo $SHELL# 如果是zsh，输入应该如下# &#x2F;bin&#x2F;zsh 如果不是zsh，检查是否安装zsh： 1234cat &#x2F;etc&#x2F;shells# 检查输出中是否有如下一行# &#x2F;bin&#x2F;zsh# 如果没有，则代表没有安装 如果没有安装zsh，请根据自己的系统自行查阅安装方法(我也忘了…😣 确认安装zsh后，输入如下命令修">
+<meta property="og:description" content="zsh准备 首先查看当前终端是否为zsh，输入如下命令查看： 123echo $SHELL# 如果是zsh，输入应该如下# &#x2F;bin&#x2F;zsh 如果不是zsh，检查是否安装zsh： 1234cat &#x2F;etc&#x2F;shells# 检查输出中是否有如下一行# &#x2F;bin&#x2F;zsh# 如果没有，则代表没有安装 如果没有安装zsh，请根据自己的系统自行查阅安装方法(我也忘了…😣 确认安装zsh后，输入如下命令修改">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-02-01T14:58:52.000Z">
 <meta property="article:modified_time" content="2023-02-01T15:17:00.366Z">
@@ -384,34 +384,34 @@
             
               <div class="markdown-body">
                 
-                <h2 id="zsh准备"><a class="markdownIt-Anchor" href="#zsh准备"></a> zsh准备</h2>
+                <h2 id="zsh准备">zsh准备</h2>
 <p>首先查看当前终端是否为zsh，输入如下命令查看：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">echo</span> <span class="hljs-variable">$SHELL</span><br><span class="hljs-comment"># 如果是zsh，输入应该如下</span><br><span class="hljs-comment"># /bin/zsh</span><br></code></pre></td></tr></table></figure>
 <p>如果不是zsh，检查是否安装zsh：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">cat</span> /etc/shells<br><span class="hljs-comment"># 检查输出中是否有如下一行</span><br><span class="hljs-comment"># /bin/zsh</span><br><span class="hljs-comment"># 如果没有，则代表没有安装</span><br></code></pre></td></tr></table></figure>
-<p>如果没有安装zsh，请根据自己的系统自行查阅安装方法(我也忘了…😣<br />
+<p>如果没有安装zsh，请根据自己的系统自行查阅安装方法(我也忘了…😣<br>
 确认安装zsh后，输入如下命令修改默认终端为zsh:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">chsh -s /bin/zsh<br><span class="hljs-comment"># 如果要改回bash，将上述命令中的zsh改为bash即可</span><br></code></pre></td></tr></table></figure>
 <p><strong>可能需要重启使上述命令生效。</strong></p>
-<h2 id="安装oh-my-zsh"><a class="markdownIt-Anchor" href="#安装oh-my-zsh"></a> 安装Oh-my-zsh</h2>
+<h2 id="安装Oh-my-zsh">安装Oh-my-zsh</h2>
 <p>确认当前默认终端更改为zsh之后，就可以安装Oh-my-zsh了。为了提高下载速度，这里使用gitee源进行安装:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># curl安装</span><br>sh -c <span class="hljs-string">&quot;<span class="hljs-subst">$(curl -fsSL https://gitee.com/pocmon/ohmyzsh/raw/master/tools/install.sh)</span>&quot;</span><br><span class="hljs-comment"># wget安装</span><br>sh -c <span class="hljs-string">&quot;<span class="hljs-subst">$(wget -O- https://gitee.com/pocmon/ohmyzsh/raw/master/tools/install.sh)</span>&quot;</span><br></code></pre></td></tr></table></figure>
-<h2 id="美化oh-my-zsh"><a class="markdownIt-Anchor" href="#美化oh-my-zsh"></a> 美化Oh-my-zsh</h2>
+<h2 id="美化Oh-my-zsh">美化Oh-my-zsh</h2>
 <p>这里使用zsh-syntax-highlighting和zsh-autosuggestion两款插件以及agnoster主题对Oh-my-zsh进行美化。</p>
-<h3 id="插件安装"><a class="markdownIt-Anchor" href="#插件安装"></a> 插件安装</h3>
+<h3 id="插件安装">插件安装</h3>
 <p>两款插件的安装方法如下：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 进入插件目录下</span><br><span class="hljs-built_in">cd</span> ~/.oh-my-zsh/custom/plugins<br><span class="hljs-comment"># 安装两款插件(这里的路径已经失效，可以去gitee自行查询两款插件)</span><br>git <span class="hljs-built_in">clone</span> https://gitee.com/lewisliugl/zsh-autosuggestions.git<br>git <span class="hljs-built_in">clone</span> https://gitee.com/lewisliugl/zsh-syntax-highlighting.git<br><span class="hljs-comment"># 对zshrc文件进行编辑</span><br>vi ~/.zshrc<br><span class="hljs-comment"># 找到plugins=(git)内容，并确保其中包含如下内容</span><br>plugins=(<br>	git<br>	zsh-autosuggestions<br>	zsh-syntax-highlighting<br>)<br><span class="hljs-comment">#保存并退出文件，输入如下命令使文件生效</span><br><span class="hljs-built_in">source</span> ~/.zshrc<br></code></pre></td></tr></table></figure>
-<p>这样，两款插件就配置好了。<br />
+<p>这样，两款插件就配置好了。<br>
 zsh-syntax-highlighting会在命令输入不正确时显示红色，正确时显示绿色；zsh-autosuggestions会记录用户之前输入的命令并在下次输入类似命令时给出提示，按-&gt;方向键即可补全为之前输入的命令。</p>
 <blockquote>
 <p>上述安装过程使用了vi编辑器，如果对涉及到的具体操作不熟悉请自行查阅。</p>
 </blockquote>
-<h3 id="主题设置"><a class="markdownIt-Anchor" href="#主题设置"></a> 主题设置</h3>
+<h3 id="主题设置">主题设置</h3>
 <p>本文使用agnoster主题进行美化，其他主题的配置思路类似。有关Oh-my-zsh的全部主题，可参考<a target="_blank" rel="noopener" href="https://github.com/ohmyzsh/ohmyzsh/wiki/Themes">Oh-my-zsh主题官方页</a>。</p>
-<h4 id="字体下载"><a class="markdownIt-Anchor" href="#字体下载"></a> 字体下载</h4>
+<h4 id="字体下载">字体下载</h4>
 <p>agnoster主题需要特殊字体，该字体包含在powerline-fonts字体库中，安装方法如下：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># clone字体库(这里的路径也失效啦，到gitee上自行查询powerline-fonts吧)</span><br>git <span class="hljs-built_in">clone</span> https://gitee.com/lewisliugl/powerline-fonts.git<br><span class="hljs-comment"># 进入下载的目录</span><br><span class="hljs-built_in">cd</span> powerline-fonts<br><span class="hljs-comment"># 安装字体</span><br>./install.sh<br><span class="hljs-comment"># 清理内容</span><br><span class="hljs-built_in">cd</span> ..<br><span class="hljs-built_in">rm</span> -rf powerline-fonts<br></code></pre></td></tr></table></figure>
-<h4 id="修改字体和配色"><a class="markdownIt-Anchor" href="#修改字体和配色"></a> 修改字体和配色</h4>
+<h4 id="修改字体和配色">修改字体和配色</h4>
 <p>这里根据你使用的终端软件不同，会有不同的设置方法，总之设置如下两点即可：</p>
 <ul>
 <li>将字体修改为Meslo LG S DZ for Powerline</li>
@@ -419,7 +419,7 @@ zsh-syntax-highlighting会在命令输入不正确时显示红色，正确时显
 </ul>
 <p>之后，修改zshrc文件中的ZSH_THEME内容：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs bash">vi ~/.zshrc<br>ZSH_THEME=<span class="hljs-string">&quot;agnoster&quot;</span>  <span class="hljs-comment"># 找到ZSH_THEME= 这一行修改</span><br><span class="hljs-comment"># 保存并退出文件，输入如下命令使文件生效</span><br><span class="hljs-built_in">source</span> ~/.zshrc<br></code></pre></td></tr></table></figure>
-<h4 id="细微修改"><a class="markdownIt-Anchor" href="#细微修改"></a> 细微修改</h4>
+<h4 id="细微修改">细微修改</h4>
 <p>agnoster的标签中可以自定义表情，修改方式如下：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># vi打开agnoster主题的配置文件</span><br>vi ~/.oh-my-zsh/themes/agnoster.zsh-theme<br><span class="hljs-comment"># 找到如下内容</span><br><span class="hljs-comment"># Context: user@hostname (who am I and where am I)</span><br><span class="hljs-function"><span class="hljs-title">prompt_context</span></span>() &#123;<br>  <span class="hljs-keyword">if</span> [[ <span class="hljs-string">&quot;<span class="hljs-variable">$USERNAME</span>&quot;</span> != <span class="hljs-string">&quot;<span class="hljs-variable">$DEFAULT_USER</span>&quot;</span> || -n <span class="hljs-string">&quot;<span class="hljs-variable">$SSH_CLIENT</span>&quot;</span> ]]; <span class="hljs-keyword">then</span><br>    prompt_segment black default <span class="hljs-string">&quot; &quot;</span><br>  <span class="hljs-keyword">fi</span><br>&#125;<br><span class="hljs-comment"># 在default之后的引号中添加自己想要的表情即可(也可以有用户名 $USER 这样的内容)</span><br></code></pre></td></tr></table></figure>
 <p>有关表情，可以参考<a target="_blank" rel="noopener" href="https://emojipedia.org/">emojipedia</a>找到更多有意思的表情🕵️</p>
